@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero bg-dark text-white text-center py-5">
+      <h1>Explore the World</h1>
+      <div class="search-bar mt-4">
+        <input type="text" placeholder="Destination" id="destination" />
+        <input type="date" id="check-in" />
+        <input type="date" id="check-out" />
+        <button class="btn btn-primary" onclick="handleSearch()">Search</button>
+      </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <div class="container mt-5">
+      <div class="row" id="destinations">
+        <!-- Populated by JavaScript -->
+      </div>
+    </div>
+
+    <section class="contact py-5 bg-light">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="email" placeholder="Email" class="form-control mb-2" />
+          <textarea class="form-control mb-2" placeholder="Message"></textarea>
+          <button class="btn btn-success">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
